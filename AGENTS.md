@@ -1,4 +1,4 @@
-# Bo Repo
+﻿# Bo Repo
 
 ## Doel
 
@@ -19,8 +19,8 @@ Voor verdere vrijblijvende informatie kan je ook per mail terecht: selien@borepo
 
 ## Afbeeldingen
 
-img/bo-repo-img-1.jpg
-img/bo-repo-img-2.jpg (optioneel)
+img/bo-repo-hero.jpg
+img/bo-repo-process.jpg (optioneel)
 img/bo-repo-logo-groen.jpg (origineel)
 img/bo-repo-logo-groen.png (achtergrond verwijderd)
 
