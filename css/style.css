@@ -10,7 +10,7 @@
 
 :root {
   color-scheme: light;
-  --green: rgb(98 146 110);
+  --green: #62926e; /* rgb(98, 146, 110) */
   --green-dark: #355b41;
   --grey-tint: #f4efea;
   --ink: #252a25;
