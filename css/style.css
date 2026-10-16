@@ -213,8 +213,19 @@ h2 {
   letter-spacing: -0.025em;
 }
 
-.process-copy p:last-child {
+/*.process-copy p:last-child {
   margin: 1.4375rem 0 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.8;
+}*/
+
+.process-copy p:nth-last-child(2) {
+  margin: 1.4375rem 0 0;
+}
+
+.process-copy p{
+  margin: 0;
   color: var(--muted);
   font-size: 1rem;
   line-height: 1.8;
@@ -258,6 +269,10 @@ h2 {
   .brand img {
     width: 4.75rem;
     height: 4.75rem;
+  }
+
+  .brand-name {
+    white-space: nowrap;
   }
 
   .header-note {
