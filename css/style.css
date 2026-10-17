@@ -184,17 +184,26 @@ h1 {
   font-size: 1.0625rem;
 }
 
-/* Process */
-.process {
+/* offer & Mission */
+.offer,
+.mission {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
   gap: 2rem;
   padding: 3.125rem var(--gutter) 3.5rem;
+}
+
+.mission {
   background: var(--grey-tint);
 }
 
-.process-image {
+.offer{
+  background: var(--paper);
+}
+
+.offer-image,
+.mission-image {
   width: 100%;
   aspect-ratio: 1.15 / 1;
   object-fit: cover;
@@ -202,33 +211,42 @@ h1 {
   border-radius: 1rem;
 }
 
-.process-copy {
+.mission-copy {
   max-width: 27.5rem;
 }
 
+.offer-copy{
+  max-width: 32.5rem;
+}
+
 h2 {
-  margin: 0;
+  margin: 0 0 1.4375rem 0;
   font-size: clamp(2.625rem, 10vw, 4rem);
   line-height: 0.98;
   letter-spacing: -0.025em;
 }
 
-/*.process-copy p:last-child {
-  margin: 1.4375rem 0 0;
-  color: var(--muted);
-  font-size: 1rem;
-  line-height: 1.8;
-}*/
-
-.process-copy p:nth-last-child(2) {
-  margin: 1.4375rem 0 0;
-}
-
-.process-copy p{
+.offer-copy p,
+.mission-copy p {
   margin: 0;
   color: var(--muted);
   font-size: 1rem;
   line-height: 1.8;
+}
+
+.offer-copy ol {
+  margin: 0.25rem 0 0.25rem 0;
+  padding-left: 0.75rem;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.8;
+  list-style: none;
+  counter-reset: item;
+}
+
+.offer-copy ol li::before {
+    counter-increment: item;
+    content: counter(item) " - ";
 }
 
 /* Footer */
@@ -321,13 +339,22 @@ h2 {
     padding: 0.5625rem 0.75rem;
   }
 
-  .process {
+  .offer,
+  .mission {
     grid-template-columns: 1fr 0.85fr;
     gap: clamp(2.375rem, 9vw, 8.25rem);
     padding: clamp(3.375rem, 8vw, 7rem) max(var(--gutter), calc((100vw - var(--shell-max)) / 2));
   }
 
-  .process-image {
+  .mission :first-child {
+    order: 2;
+  }
+  .mission :last-child {
+    order: 1;
+  }
+
+  .offer-image,
+  .mission-image {
     aspect-ratio: 1.24 / 1;
   }
 
